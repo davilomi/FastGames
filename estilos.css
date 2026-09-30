@@ -50,4 +50,55 @@ footer h4 {
     .footer-enlaces a:hover {
         transform: none;
     }
+/* Quitamos los márgenes que pone el navegador por defecto */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* Barra superior */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1e1e2f;
+    padding: 15px 40px;
+}
+
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Menú */
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Enlaces del menú */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+
+/* Cuando pasas el ratón por encima */
+nav a:hover {
+    background-color: #44445c;
+}
+
+
+/* Página en la que estamos */
+nav a.resaltada {
+    background-color: #8a2be2;
 }
