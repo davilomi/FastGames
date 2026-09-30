@@ -201,3 +201,110 @@ body {
     width: 100%;
   }
 }
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 35px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+footer h4 {
+    color: #ff4b4b;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-enlaces,
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-enlaces a {
+    color: #dddddd;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer-enlaces a:hover {
+    color: #ff4b4b;
+    transform: translateX(5px);
+}
+
+.footer-contacto p {
+    color: #dddddd;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Para móviles */
+@media (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-enlaces a:hover {
+        transform: none;
+    }
+}
+    
+/* Quitamos los márgenes que pone el navegador por defecto */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* Barra superior */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1e1e2f;
+    padding: 15px 40px;
+}
+
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Menú */
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Enlaces del menú */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+
+/* Cuando pasas el ratón por encima */
+nav a:hover {
+    background-color: #44445c;
+}
+
+
+/* Página en la que estamos */
+nav a.resaltada {
+    background-color: #8a2be2;
+}
+

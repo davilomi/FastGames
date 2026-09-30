@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FastGames</title>
-  <link rel="stylesheet" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <main class="pagina-principal">
+    <!--HEADER      DAVID-->
+<header>
+
+    <a href="index.html"><img src="img/Logo-FastGames.jpg" alt="Logo-FastGames" class="logo"></a>
+     
+
+    <nav>
+        <a href="index.html" class="resaltada">Inicio</a>
+        <a href="descuentos.html">Descuentos</a>
+        <a href="lo-mas-vendido.html">Lo mas vendido</a>
+        <a href="nuevos-lanzamientos.html">Nuevos lanzamientos</a>
+    </nav>
+</header>
+
+    <!--Pagina principal        OSCAR-->
+     <main class="pagina-principal">
 
     <section class="hero">
       <h1>FastGames</h1>
@@ -136,6 +152,25 @@
 
   </main>
 
+    <!--FOTTER-->
+    <footer>
+    
+  <div class="footer-enlaces">
+    <h4>Enlaces</h4>
+    <a href="descuentos.html">Descuentos</a>
+    <a href="lo-mas-vendido.html">Lo más vendido</a>
+    <a href="nuevos-lanzamientos.html">Nuevos lanzamientos</a>
+  </div>
+
+  <div class="footer-contacto">
+    <h4>Contacto</h4>
+    <p>Email: contacto@fastgames.com</p>
+    <p>Teléfono: 600 000 000</p>
+    <p>Horario de atención: lunes a viernes de 9:00 a 18:00.</p>
+  </div>
+
+</footer>
+
   <script>
     const pista = document.getElementById("pista");
     const prev = document.getElementById("prev");
@@ -163,5 +198,6 @@
     next.addEventListener("click", function () { index++; mover(); });
     window.addEventListener("resize", mover);
   </script>
+=======
 </body>
 </html>
