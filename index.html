@@ -1,243 +1,208 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css" />
-  </head>
-  <body>
-    <!--HEADER      DAVID-->
-    <header>
-      <a href="index.html"
-        ><img src="img/Logo-FastGames.jpg" alt="Logo-FastGames" class="logo"
-      /></a>
 
-      <nav>
-        <a href="index.html" class="resaltada">Inicio</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <!--HEADER      DAVID-->
+  <header>
+    <a href="index.html"><img src="img/Logo-FastGames.jpg" alt="Logo-FastGames" class="logo" /></a>
+
+    <nav>
+      <a href="index.html" class="resaltada">Inicio</a>
+      <a href="descuentos.html">Descuentos</a>
+      <a href="lo-mas-vendido.html">Lo mas vendido</a>
+      <a href="nuevos-lanzamientos.html">Nuevos lanzamientos</a>
+    </nav>
+  </header>
+
+  <!--Pagina principal        OSCAR-->
+  <main class="pagina-principal">
+
+
+    <section class="hero">
+      <h1>FastGames</h1>
+      <p class="descripcion">Compra juegos al instante. Ofertas claras y los titulos mas pedidos en un solo lugar.</p>
+      <div class="botones">
         <a href="descuentos.html">Descuentos</a>
-        <a href="lo-mas-vendido.html">Lo mas vendido</a>
-        <a href="nuevos-lanzamientos.html">Nuevos lanzamientos</a>
-      </nav>
-    </header>
+        <a class="secundario" href="lo-mas-vendido.html">Lo mas vendido</a>
+      </div>
+    </section>
 
-    <!--Pagina principal        OSCAR-->
-    <main class="pagina-principal">
-      <section class="hero">
-        <h1>FastGames</h1>
-        <p class="descripcion">
-          Compra juegos al instante. Ofertas claras y los titulos mas pedidos en
-          un solo lugar.
-        </p>
-        <!--
-        
-        Al revisar el codigo vi que en el header ya tenemos esos dos 
-        enlaces usados y para no tener los botones repetidos lo voy dejar 
-        comentado por si mas alante queremos editarlo
+    <section class="destacados" id="descuentos">
+      <h2 id="lo-mas-vendido">Juegos destacados</h2>
 
-        <div class="botones">
-          <a href="descuentos.html">Descuentos</a>
-          <a class="secundario" href="lo-mas-vendido.html">Lo mas vendido</a>
-        </div>
-        
-        -->
-      </section>
+      <div class="carrusel">
+        <button class="flecha" type="button" id="prev">&#10094;</button>
 
-      <section class="destacados" id="descuentos">
-        <h2 id="lo-mas-vendido">Juegos destacados</h2>
+        <div class="carrusel-ventana">
+          <div class="carrusel-pista" id="pista">
 
-        <div class="carrusel">
-          <button class="flecha" type="button" id="prev">&#10094;</button>
+            <article class="juego">
+              <img src="img/ocarina of time.png" alt="Ocarina of Time" />
+              <h3>The Legend of Zelda: Ocarina of Time</h3>
+              <p class="precio">$59.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="reservar" href="#reservar-ocarina">Reservar</a>
+              </div>
+            </article>
 
-          <div class="carrusel-ventana">
-            <div class="carrusel-pista" id="pista">
-              <article class="juego">
-                <img
-                  src="https://pbs.twimg.com/media/HRs_9q2XgAE-SZb.jpg"
-                  alt="Ocarina of Time"
-                />
-                <h3>The Legend of Zelda: Ocarina of Time</h3>
-                <p class="precio">$59.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="reservar" href="#reservar-ocarina">Reservar</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/minecraftdungeons.jpg" />
+              <h3>Minecraft Dungeons 2</h3>
+              <p class="precio">$29.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://www.minecraft.net/content/dam/minecraftnet/games/spicewood/key-art/Spicewood_Landing-Page_Trailer-Thumbnail.jpg"
-                  alt="Minecraft Dungeons 2"
-                />
-                <h3>Minecraft Dungeons 2</h3>
-                <p class="precio">$29.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/FC-27.jpg" alt="EA Sports FC 27" />
+              <h3>EA Sports FC 27</h3>
+              <p class="precio">$69.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://pbs.twimg.com/media/HNwpGTEW4AAjuIQ.jpg"
-                  alt="EA Sports FC 27"
-                />
-                <h3>EA Sports FC 27</h3>
-                <p class="precio">$69.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/counter.jpeg" alt="Counter-Strike 2" />
+              <h3>Counter-Strike 2</h3>
+              <p class="precio">Gratis</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg"
-                  alt="Counter-Strike 2"
-                />
-                <h3>Counter-Strike 2</h3>
-                <p class="precio">Gratis</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/GTAV.jpg" alt="GTA V" />
+              <h3>Grand Theft Auto V</h3>
+              <p class="precio">$19.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg"
-                  alt="GTA V"
-                />
-                <h3>Grand Theft Auto V</h3>
-                <p class="precio">$19.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/elden.jpg" alt="Elden Ring" />
+              <h3>Elden Ring</h3>
+              <p class="precio">$59.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg"
-                  alt="Elden Ring"
-                />
-                <h3>Elden Ring</h3>
-                <p class="precio">$59.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/cyberpunk-2077.jpg" alt="Cyberpunk 2077" />
+              <h3>Cyberpunk 2077</h3>
+              <p class="precio">$29.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg"
-                  alt="Cyberpunk 2077"
-                />
-                <h3>Cyberpunk 2077</h3>
-                <p class="precio">$29.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/black-myth-wukong-scaled.webp" alt="Black Myth Wukong" />
+              <h3>Black Myth: Wukong</h3>
+              <p class="precio">$59.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/header.jpg"
-                  alt="Black Myth Wukong"
-                />
-                <h3>Black Myth: Wukong</h3>
-                <p class="precio">$59.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/reddead.jpg" alt="Red Dead Redemption 2" />
+              <h3>Red Dead Redemption 2</h3>
+              <p class="precio">$39.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg"
-                  alt="Red Dead Redemption 2"
-                />
-                <h3>Red Dead Redemption 2</h3>
-                <p class="precio">$39.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
+            <article class="juego">
+              <img src="img/hogwarts.jpg" alt="Hogwarts Legacy" />
+              <h3>Hogwarts Legacy</h3>
+              <p class="precio">$24.99</p>
+              <div class="acciones">
+                <a class="carrito" href="#carrito">Agregar al carrito</a>
+                <a class="comprar" href="#comprar">Comprar ahora</a>
+              </div>
+            </article>
 
-              <article class="juego">
-                <img
-                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg"
-                  alt="Hogwarts Legacy"
-                />
-                <h3>Hogwarts Legacy</h3>
-                <p class="precio">$24.99</p>
-                <div class="acciones">
-                  <a class="carrito" href="#carrito">Agregar al carrito</a>
-                  <a class="comprar" href="#comprar">Comprar ahora</a>
-                </div>
-              </article>
-            </div>
           </div>
-
-          <button class="flecha" type="button" id="next">&#10095;</button>
         </div>
-      </section>
-    </main>
 
-    <!--FOTTER-->
-    <footer>
-      <div class="footer-enlaces">
-        <h4>Enlaces</h4>
-        <a href="descuentos.html">Descuentos</a>
-        <a href="lo-mas-vendido.html">Lo más vendido</a>
-        <a href="nuevos-lanzamientos.html">Nuevos lanzamientos</a>
+
+
+        <button class="flecha" type="button" id="next">&#10095;</button>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-contacto">
-        <h4>Contacto</h4>
-        <p>Email: contacto@fastgames.com</p>
-        <p>Teléfono: 600 000 000</p>
-        <p>Horario de atención: lunes a viernes de 9:00 a 18:00.</p>
-      </div>
-    </footer>
+  <!--FOTTER-->
+  <footer>
+    <div class="footer-enlaces">
+      <h4>Enlaces</h4>
+      <a href="descuentos.html">Descuentos</a>
+      <a href="lo-mas-vendido.html">Lo más vendido</a>
+      <a href="nuevos-lanzamientos.html">Nuevos lanzamientos</a>
+    </div>
 
-    <script>
-      const pista = document.getElementById("pista");
-      const prev = document.getElementById("prev");
-      const next = document.getElementById("next");
-      let index = 0;
+    <div class="footer-contacto">
+      <h4>Contacto</h4>
+      <p>Email: contacto@fastgames.com</p>
+      <p>Teléfono: 600 000 000</p>
+      <p>Horario de atención: lunes a viernes de 9:00 a 18:00.</p>
+    </div>
+  </footer>
 
-      function visibles() {
-        if (window.innerWidth < 700) return 1;
-        if (window.innerWidth < 1050) return 2;
-        return 3;
-      }
+  <script>
+    const pista = document.getElementById("pista");
+    const prev = document.getElementById("prev");
+    const next = document.getElementById("next");
+    let index = 0;
 
-      function mover() {
-        const tarjeta = pista.querySelector(".juego");
-        if (!tarjeta) return;
-        const gap = parseFloat(getComputedStyle(pista).gap) || 24;
-        const paso = tarjeta.getBoundingClientRect().width + gap;
-        const max = Math.max(0, pista.children.length - visibles());
-        if (index < 0) index = max;
-        if (index > max) index = 0;
-        pista.style.transform = "translateX(" + -index * paso + "px)";
-      }
+    function visibles() {
+      if (window.innerWidth < 700) return 1;
+      if (window.innerWidth < 1050) return 2;
+      return 3;
+    }
 
-      prev.addEventListener("click", function () {
-        index--;
-        mover();
-      });
-      next.addEventListener("click", function () {
-        index++;
-        mover();
-      });
-      window.addEventListener("resize", mover);
-    </script>
-    =======
-  </body>
+    function mover() {
+      const tarjeta = pista.querySelector(".juego");
+      if (!tarjeta) return;
+      const gap = parseFloat(getComputedStyle(pista).gap) || 24;
+      const paso = tarjeta.getBoundingClientRect().width + gap;
+      const max = Math.max(0, pista.children.length - visibles());
+      if (index < 0) index = max;
+      if (index > max) index = 0;
+      pista.style.transform = "translateX(" + -index * paso + "px)";
+    }
+
+    prev.addEventListener("click", function () {
+      index--;
+      mover();
+    });
+    next.addEventListener("click", function () {
+      index++;
+      mover();
+    });
+    window.addEventListener("resize", mover);
+  </script>
+</body>
+
 </html>
