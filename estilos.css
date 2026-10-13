@@ -307,4 +307,157 @@ nav a:hover {
 nav a.resaltada {
     background-color: #8a2be2;
 }
+.pagina-vendidos {
+  min-height: 70vh;
+  padding: 0 20px 70px;
+  background:
+    radial-gradient(circle at 18% 12%, #dbe4ff 0, transparent 36%),
+    radial-gradient(circle at 88% 8%, #ffe8a3 0, transparent 32%),
+    linear-gradient(180deg, #f7f8ff 0%, #f4f6fb 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+}
+
+.pagina-vendidos .hero,
+.pagina-vendidos .lista-top {
+  width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.pagina-vendidos .hero {
+  text-align: center;
+  padding: 54px 0 28px;
+}
+
+.pagina-vendidos .badge {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #111827;
+  color: #facc15;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pagina-vendidos .hero h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  color: #111827;
+  letter-spacing: -0.4px;
+}
+
+.pagina-vendidos .descripcion {
+  margin: 14px auto 0;
+  max-width: 560px;
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 1.02rem;
+}
+
+.pagina-vendidos .lista-top {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pagina-vendidos .bloque {
+  display: grid;
+  grid-template-columns: 56px 250px 1fr;
+  gap: 18px;
+  align-items: center;
+  background: #fff;
+  border-radius: 24px;
+  padding: 16px 18px;
+  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.08);
+}
+
+.pagina-vendidos .puesto {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #5b4dff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.15rem;
+  justify-self: center;
+}
+
+.pagina-vendidos .bloque img {
+  width: 250px;
+  height: 140px;
+  object-fit: contain;
+  background: #f3f4f6;
+  border-radius: 16px;
+  display: block;
+}
+
+.pagina-vendidos .info h2 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: #111827;
+}
+
+.pagina-vendidos .precio {
+  margin: 0 0 8px;
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.pagina-vendidos .texto {
+  margin: 0 0 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.pagina-vendidos .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pagina-vendidos .acciones a {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 0.88rem;
+}
+
+.pagina-vendidos .carrito {
+  background: #111827;
+  color: #fff;
+}
+
+.pagina-vendidos .comprar {
+  background: #5b4dff;
+  color: #fff;
+}
+
+.pagina-vendidos .reservar {
+  background: #f59e0b;
+  color: #1a1400;
+}
+
+@media (max-width: 760px) {
+  .pagina-vendidos .bloque {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .pagina-vendidos .bloque img {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+  }
+
+  .pagina-vendidos .acciones {
+    justify-content: center;
+  }
+}
 
